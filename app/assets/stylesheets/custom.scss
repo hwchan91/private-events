@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+hr { width:100%; height:1px; background: #000 }
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;

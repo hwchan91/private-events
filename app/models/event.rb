@@ -4,4 +4,8 @@ class Event < ApplicationRecord
                               dependent: :destroy
   has_many :attendees, through: :event_attendants
   belongs_to :creator, class_name: "User"
+  scope :upcoming, -> {where("events.date >= ?", Date.today) }
+  scope :past, -> {where("events.date < ?", Date.today) }
+
+
 end

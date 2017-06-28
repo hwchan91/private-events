@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user
       log_in @user
       flash[:success] = "Welcome"
-      redirect_to @user
+      redirect_to events_url
     else
       flash[:danger] = 'No such user'
       render 'new'

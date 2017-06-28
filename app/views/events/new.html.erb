@@ -1,0 +1,15 @@
+<h1>Create a New Event</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@event) do |f| %>
+      <%= f.label :description, 'Details of the event'%>
+      <%= f.text_area :description, size: "30x10"%>
+
+      <%= f.label :date, 'Event date' %>
+      <%= f.date_select :date%>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
