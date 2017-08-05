@@ -18,6 +18,7 @@ test:
 production:
   adapter: postgresql
   database: database_development
+  encoding: utf8
   pool: 5
   timeout: 5000
-  host: /tmp
+  host: localhost
