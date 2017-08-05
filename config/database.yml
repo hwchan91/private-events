@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: private_events_production
+  pool: 5
+  username: private_events
+  password: password
